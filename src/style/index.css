@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important; /* White arrows */
+}
+
+:root {
+  --primary: #57852d;
+  --secondary-color: #F97316;
+  --dark-color: #0F172A;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+}
