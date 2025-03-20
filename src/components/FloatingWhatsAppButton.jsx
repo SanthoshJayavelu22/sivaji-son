@@ -17,13 +17,13 @@ const FloatingWhatsAppButton = () => {
         // Hide the tooltip after 7 seconds
         setTimeout(() => {
           setShowTooltip(false);
-        }, 7000); // 7 seconds
+        }, 4000); // 7 seconds
       }, 2000); // 2 seconds
     };
 
     // Start the loop
     startTooltipLoop();
-    interval = setInterval(startTooltipLoop, 9000); // Repeat every 9 seconds (2s delay + 7s visible)
+    interval = setInterval(startTooltipLoop, 5000); // Repeat every 9 seconds (2s delay + 7s visible)
 
     // Cleanup the interval on component unmount
     return () => clearInterval(interval);
