@@ -10,7 +10,7 @@ export const Header = ({ collapsed, setCollapsed }) => {
 
     const handleLogout = () => {
         localStorage.removeItem("userRole");
-        navigate("/login");
+        navigate("/");
     };
 
     return (

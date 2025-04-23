@@ -258,7 +258,7 @@ const AssignTaskMain = () => {
                       </tr>
                     </thead>
                     <tbody>
-                      {data.staff.map((staff, index) => (
+                      {data.staff.filter(s => s.role !== 'admin').map((staff, index) => (
                         <tr 
                           key={staff.empid} 
                           className="border-b hover:bg-gray-50 dark:hover:bg-gray-800"

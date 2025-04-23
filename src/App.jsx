@@ -3,7 +3,7 @@ import { ThemeProvider } from '@/contexts/theme-context';
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import axios from 'axios'; // Added missing import
 import Layout from '@/routes/layout';
-import LoginPage from '@/routes/authentication/Page';
+import LoginPage from '@/routes/authentication/LoginPage';
 import StaffManagement from './routes/dashboard/Admin Components/StaffManagement';
 import StaffAttendancePage from './routes/dashboard/Admin Components/StaffAttendancePage';
 import MonthlyAttendancePage from './routes/dashboard/Admin Components/MonthlyAttendancepage';
